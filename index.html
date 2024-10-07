@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Send E-post</title>
 </head>
 <body>
     <form action="https://formsubmit.co/andreasars@akf.no" method="POST">
-        <label for="">Navn</label>
-        <input type="text" name="name" required>
-        <label for="">E-post</label>
-        <input type="email" name="email" required>
+        <label for="name">Navn</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-post</label>
+        <input type="email" id="email" name="email" required>
+
+        
         <input type="hidden" name="_next" value="https://mrnico073.github.io/Epostsende/takk.html">
+        
+    
+        <input type="hidden" name="_captcha" value="false">
+        
         <br>
         <button type="submit">Send</button>
    </form>
